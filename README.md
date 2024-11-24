@@ -21,12 +21,7 @@ The **Weather and Image App** is a web application that allows users to fetch cu
 
 1. **Clone or Download** the repository to your local machine.
 
-
-2. **Configure API Keys**:
-
-   - Open `app.js`.
-
-3. **Run the Application**:
+2. **Run the Application**:
 
    - Open `index.html` in your web browser.
 
