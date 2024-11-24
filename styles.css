@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.app-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-section {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-section h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.search-box {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 15px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #ff9800;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #e68900;
+}
+
+/* Weather Info */
+#weather-info {
+    text-align: center;
+}
+
+#weather-info h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+#weather-info img {
+    width: 100px;
+    height: 100px;
+}
+
+#weather-info p {
+    font-size: 24px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+#loading-icon {
+    display: none;
+    border: 8px solid rgba(255,255,255,0.2);
+    border-top: 8px solid #fff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    bottom: 40px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@media (max-width: 600px) {
+    .search-section h1 {
+        font-size: 32px;
+    }
+    #weather-info h2 {
+        font-size: 28px;
+    }
+    #weather-info p {
+        font-size: 20px;
+    }
+}
